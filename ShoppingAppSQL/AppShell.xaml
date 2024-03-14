@@ -3,13 +3,41 @@
     x:Class="ShoppingAppSQL.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:ShoppingAppSQL"
+    xmlns:local="clr-namespace:ShoppingAppSQL.Models"
     Shell.FlyoutBehavior="Disabled"
     Title="ShoppingAppSQL">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <Tab Title="HOME"
+             Icon="hometab.png">
+
+            <ShellContent
+                Title="FOOD"
+                ContentTemplate="{DataTemplate local:FoodItems}" />
+
+            <ShellContent 
+                Title="BODY CARE"
+                ContentTemplate="{DataTemplate local:BodyCare}" />
+            
+            <ShellContent 
+                Title="APPLIANCES"
+                ContentTemplate="{DataTemplate local:Appliances}"/>
+
+        </Tab>
+        <ShellContent
+            Title="COUPONS"
+            Icon="coupontab.png"
+            ContentTemplate="{DataTemplate local:CouponPage}" />
+        
+        <ShellContent
+            Title="SHOPPING CART"
+            Icon="carttab.png"
+            ContentTemplate="{DataTemplate local:ShoppingCart}" />
+        
+        <ShellContent
+            Title="PROFILE"
+            Icon="usertab.jpg"
+            ContentTemplate="{DataTemplate local:ProfilePage}"/>
+    </TabBar>
 
 </Shell>
