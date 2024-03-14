@@ -57,11 +57,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\carttab.png" />
+	  <None Remove="Resources\Images\baskettab.png" />
 	  <None Remove="Resources\Images\coupontab.png" />
 	  <None Remove="Resources\Images\fooditems.jpg" />
-	  <None Remove="Resources\Images\hometab.png" />
-	  <None Remove="Resources\Images\usertab.jpg" />
+	  <None Remove="Resources\Images\housetab.png" />
+	  <None Remove="Resources\Images\profiletab.png" />
+	  <None Remove="Resources\Images\searchtab.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -94,6 +95,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Models\ProfilePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Models\SearchPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Models\ShoppingCart.xaml">

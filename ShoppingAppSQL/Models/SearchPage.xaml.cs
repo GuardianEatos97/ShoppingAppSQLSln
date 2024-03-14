@@ -1,8 +1,8 @@
 namespace ShoppingAppSQL.Models;
 
-public partial class FoodItems : ContentPage
+public partial class SearchPage : ContentPage
 {
-	public FoodItems()
+	public SearchPage()
 	{
 		InitializeComponent();
 	}

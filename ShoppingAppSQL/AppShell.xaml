@@ -9,7 +9,7 @@
 
     <TabBar>
         <Tab Title="HOME"
-             Icon="hometab.png">
+             Icon="housetab.png">
 
             <ShellContent
                 Title="FOOD"
@@ -28,15 +28,20 @@
             Title="COUPONS"
             Icon="coupontab.png"
             ContentTemplate="{DataTemplate local:CouponPage}" />
-        
+
+        <ShellContent
+            Title="SEARCH"
+            Icon="searchtab.png"
+            ContentTemplate="{DataTemplate local:SearchPage}" />
+
         <ShellContent
             Title="SHOPPING CART"
-            Icon="carttab.png"
+            Icon="baskettab.png"
             ContentTemplate="{DataTemplate local:ShoppingCart}" />
         
         <ShellContent
             Title="PROFILE"
-            Icon="usertab.jpg"
+            Icon="profiletab.png"
             ContentTemplate="{DataTemplate local:ProfilePage}"/>
     </TabBar>
 
