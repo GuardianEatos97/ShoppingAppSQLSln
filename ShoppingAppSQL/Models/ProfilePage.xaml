@@ -16,7 +16,7 @@
             HorizontalOptions="Center"
             Clicked="ProfileBtn_Clicked"
             BorderColor="Black"
-            BorderWidth="10"
+            BorderWidth="5"
             BackgroundColor="LightSteelBlue"/>
     </VerticalStackLayout>
 </ContentPage>

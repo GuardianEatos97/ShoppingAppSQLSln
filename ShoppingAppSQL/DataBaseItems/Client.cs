@@ -1,4 +1,5 @@
 ﻿using SQLite;
+using SQLiteNetExtensions.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,5 +17,11 @@ namespace ShoppingAppSQL.DataBaseItems
         public string ClientEmail { get; set; }
         public string ContactNumber { get; set; }
         public string ClientPassword { get; set; }
+
+        [ForeignKey(typeof(ClientType))]
+        public int ClientTypeId { get; set; }
+
+        [OneToOne]
+        public ClientType ClientType { get; set; }
     }
 }

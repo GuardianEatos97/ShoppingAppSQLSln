@@ -57,6 +57,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\angel_logo.png" />
 	  <None Remove="Resources\Images\baskettab.png" />
 	  <None Remove="Resources\Images\coupontab.png" />
 	  <None Remove="Resources\Images\fooditems.jpg" />
