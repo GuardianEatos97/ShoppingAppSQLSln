@@ -16,14 +16,14 @@
         
         <Label 
             Text="Guardian Grocers Profile Page"
-            FontSize="Header"
+            FontSize="Large"
+            TextDecorations="Underline"
             FontAttributes="Bold"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         
         <Label
             Text="Create or edit your profile below"
-            FontAttributes="Italic"
             FontSize="Subtitle"
             VerticalOptions="Center"
             HorizontalOptions="Center" />
