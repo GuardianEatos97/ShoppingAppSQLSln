@@ -58,12 +58,19 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\angel_logo.png" />
+	  <None Remove="Resources\Images\background.jpg" />
 	  <None Remove="Resources\Images\baskettab.png" />
+	  <None Remove="Resources\Images\coke.png" />
 	  <None Remove="Resources\Images\coupontab.png" />
+	  <None Remove="Resources\Images\cupcakes.jpg" />
 	  <None Remove="Resources\Images\fooditems.jpg" />
+	  <None Remove="Resources\Images\Fruits.jpg" />
 	  <None Remove="Resources\Images\housetab.png" />
+	  <None Remove="Resources\Images\pies.jpg" />
 	  <None Remove="Resources\Images\profiletab.png" />
 	  <None Remove="Resources\Images\searchtab.png" />
+	  <None Remove="Resources\Images\shoppingbg.jpg" />
+	  <None Remove="Resources\Images\water.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -74,6 +81,7 @@
 		<PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
 		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.8" />
 		<PackageReference Include="SQLitePCLRaw.core" Version="2.1.8" />
+		<PackageReference Include="Syncfusion.Maui.ListView" Version="25.1.35" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -2,62 +2,70 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ShoppingAppSQL.SignInPage"
+             BackgroundImageSource="background.jpg"
              Title="">
-    
-   <ScrollView>
-    <VerticalStackLayout
+
+    <ScrollView>
+       <VerticalStackLayout
         Padding="30,0"
         Spacing="25">
-
-        <Image
+            
+            
+            <Image
             Source="angel_logo.png"
             Aspect="AspectFit"
             HeightRequest="200"/>
-        
-        <Label 
+            
+
+            
+            <Label 
             Text="Guardian Grocers Profile Page"
             FontSize="Large"
             TextDecorations="Underline"
             FontAttributes="Bold"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        
-        <Label
+            
+
+            
+            <Label
             Text="Create or edit your profile below"
             FontSize="Subtitle"
             VerticalOptions="Center"
             HorizontalOptions="Center" />
-        
-        <Entry
+           
+
+           
+            <Entry
             Placeholder="First Name(s)"
             Keyboard="Text"
             Opacity="100"
             TextColor="Black"
             Text="{Binding CurrentClient.ClientName}" />
 
-        <Entry
+            <Entry
             Placeholder="Last Name"
             Keyboard="Text"
             Opacity="100"
             TextColor="Black"
             Text="{Binding CurrentClient.ClientSurname}"/>
 
-        <Entry
+            <Entry
             Placeholder="Email Address"
             Keyboard="Email"
             Opacity="100"
             TextColor="Black"
             Text="{Binding CurrentClient.ClientEmail}"/>
-        
-        <Entry
+
+            <Entry
             Placeholder="Contact Number"
             Keyboard="Numeric"
             Opacity="100"
             MaxLength="10"
             TextColor="Black"
             Text="{Binding CurrentClient.ContactNumber}"/>
-        
-        <Entry
+
+            <Entry
             Placeholder="Password (max length 8 characters)"
             Keyboard="Text"
             Opacity="100"
@@ -65,8 +73,8 @@
             TextColor="Black"
             IsPassword="True"
             Text="{Binding CurrentClient.ClientPassword}"/>
-
-        <Button
+            
+            <Button
             x:Name="SaveBtn"
             Text="Save Profile"
             HorizontalOptions="Center"
@@ -74,8 +82,8 @@
             HeightRequest="50"
             WidthRequest="200"
             BackgroundColor="SteelBlue"/>
-            
-        <Button
+
+            <Button
             x:Name="LoadBtn"
             Text="Load Profile"
             HorizontalOptions="Center"
@@ -84,7 +92,7 @@
             WidthRequest="200"
             BackgroundColor="SteelBlue"/>
             
-    </VerticalStackLayout>
-   </ScrollView>
-    
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

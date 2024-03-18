@@ -28,6 +28,7 @@ namespace ShoppingAppSQL.ShoppingDatabaseServices
 
             _dbConnection.CreateTable<Client>();
             _dbConnection.CreateTable<ClientType>();
+
             SeedDatabase();
         }
 
