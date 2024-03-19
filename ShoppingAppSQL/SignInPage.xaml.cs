@@ -51,9 +51,10 @@ public partial class SignInPage : ContentPage
 
     }
 
-    private void SaveButton_Clicked(object sender, EventArgs e)
+    private async void SaveButton_Clicked(object sender, EventArgs e)
     {
         _database.UpdateClient(CurrentClient);
+        await DisplayAlert("Profile Saved", "Your Profile has been saved", "Okay");
     }
    
 }

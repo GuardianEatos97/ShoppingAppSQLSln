@@ -38,6 +38,7 @@
            
             <Entry
             Placeholder="First Name(s)"
+            PlaceholderColor="Black"
             Keyboard="Text"
             Opacity="100"
             TextColor="Black"
@@ -45,6 +46,7 @@
 
             <Entry
             Placeholder="Last Name"
+            PlaceholderColor="Black"
             Keyboard="Text"
             Opacity="100"
             TextColor="Black"
@@ -52,6 +54,7 @@
 
             <Entry
             Placeholder="Email Address"
+            PlaceholderColor="Black"
             Keyboard="Email"
             Opacity="100"
             TextColor="Black"
@@ -59,6 +62,7 @@
 
             <Entry
             Placeholder="Contact Number"
+            PlaceholderColor="Black"
             Keyboard="Numeric"
             Opacity="100"
             MaxLength="10"
@@ -67,6 +71,7 @@
 
             <Entry
             Placeholder="Password (max length 8 characters)"
+            PlaceholderColor="Black"
             Keyboard="Text"
             Opacity="100"
             MaxLength="8"

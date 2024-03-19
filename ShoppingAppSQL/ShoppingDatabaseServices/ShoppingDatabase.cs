@@ -16,7 +16,7 @@ namespace ShoppingAppSQL.ShoppingDatabaseServices
 
         public string GetDatabasePath()
         {
-            string filename = "bankingdata.db";
+            string filename = "shoppingdata.db";
             string pathToDb = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
             return Path.Combine(pathToDb, filename);
         }

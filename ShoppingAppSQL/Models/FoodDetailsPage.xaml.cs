@@ -11,6 +11,6 @@ public partial class FoodDetailsPage : ContentPage
     public FoodDetailsPage(FoodItemViewModel item)
 	{
 		InitializeComponent();
-		BindingContext = item;
+        BindingContext = item;
 	}
 }

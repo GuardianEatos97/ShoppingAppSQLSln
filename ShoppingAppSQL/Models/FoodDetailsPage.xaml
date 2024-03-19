@@ -22,7 +22,6 @@
                         <Label Grid.Row="1" Text="{Binding FoodName}" FontSize="30" FontAttributes="Bold"/>
                         <Label Grid.Row="2" Text="{Binding FoodPrice}" FontSize="25" Padding="0,15" TextColor="#2C363C" FontAttributes="Bold"/>
                         <Label Grid.Row="3" Text="{Binding FoodDescription}" FontSize="20" TextColor="Black"/>
-                        <Label Grid.Row="4" Text="Quantity left: {Binding FoodQuantity}" FontSize="5" TextColor="Black"/>
                     </Grid>
                 </Grid>
             </StackLayout>
