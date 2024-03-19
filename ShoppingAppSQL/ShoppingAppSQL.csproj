@@ -85,22 +85,31 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Models\FoodItems.xaml.cs">
-	    <DependentUpon>FoodItems.xaml</DependentUpon>
+	  <Compile Update="Models\AppliancesPage.xaml.cs">
+	    <DependentUpon>AppliancesPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Models\BodyCarePage.xaml.cs">
+	    <DependentUpon>BodyCarePage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Models\FoodPage.xaml.cs">
+	    <DependentUpon>FoodPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Models\Appliances.xaml">
+	  <MauiXaml Update="Models\AppliancesPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Models\BodyCare.xaml">
+	  <MauiXaml Update="Models\BodyCarePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Models\CouponPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Models\FoodItems.xaml">
+	  <MauiXaml Update="Models\FoodDetailsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Models\FoodPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Models\ProfilePage.xaml">

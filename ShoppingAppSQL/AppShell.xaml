@@ -13,7 +13,7 @@
 
             <ShellContent
                 Title="FOOD"
-                ContentTemplate="{DataTemplate local:FoodItems}" />
+                ContentTemplate="{DataTemplate local:FoodPage}" />
 
             <ShellContent 
                 Title="BODY CARE"
