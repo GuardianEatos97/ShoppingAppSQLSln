@@ -2,11 +2,26 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ShoppingAppSQL.Models.SearchPage"
+             BackgroundColor="BlanchedAlmond"
              Title="">
+    <ScrollView>
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <SearchBar
+            Placeholder="Click Here To Search For Items"
+            Keyboard="Chat"
+            PlaceholderColor="Black"
+            Margin="50"/>
+
+        <Image
+            Source="eastersavings3.jpg"
+            Aspect="Fill"/>
+        <Image
+            Source="eastersavings1.jpg"
+            Aspect="AspectFill"/>
+        <Image
+            Source="eastersavings2.jpg"
+            Aspect="AspectFill"/>
+
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

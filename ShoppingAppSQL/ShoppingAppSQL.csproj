@@ -63,6 +63,9 @@
 	  <None Remove="Resources\Images\coke.png" />
 	  <None Remove="Resources\Images\coupontab.png" />
 	  <None Remove="Resources\Images\cupcakes.jpg" />
+	  <None Remove="Resources\Images\eastersavings1.jpg" />
+	  <None Remove="Resources\Images\eastersavings2.jpg" />
+	  <None Remove="Resources\Images\eastersavings3.jpg" />
 	  <None Remove="Resources\Images\fooditems.jpg" />
 	  <None Remove="Resources\Images\Fruits.jpg" />
 	  <None Remove="Resources\Images\housetab.png" />

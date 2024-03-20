@@ -3,14 +3,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ShoppingAppSQL.Models.ProfilePage"
              Title="">
-    
+    <ScrollView>
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
+        <Image 
+            Source="angel_logo.png"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-
-        <Button
+            HorizontalOptions="Center"
+            HeightRequest="150"
+            />
+            <Label
+                Text="Seraphim Superette Member Page"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                FontSize="Large"
+                TextDecorations="Underline"
+                FontAttributes="Bold"
+            />
+            <Frame BorderColor="Transparent">
+                <StackLayout Orientation="Vertical">
+                    <Image
+                        Source="profiletab.png"
+                        VerticalOptions="Start"
+                        HeightRequest="100"/>
+                    <Entry Text="{Binding CurrentClient.ClientName}" FontSize="15" TextColor="Black"/>
+                </StackLayout>
+            </Frame>
+            
+            <Button
             x:Name="ProfileBtn"
             Text="Profile Settings"
             HorizontalOptions="Center"
@@ -19,4 +38,5 @@
             BorderWidth="5"
             BackgroundColor="LightSteelBlue"/>
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

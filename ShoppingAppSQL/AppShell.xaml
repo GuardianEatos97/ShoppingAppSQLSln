@@ -37,7 +37,7 @@
         <ShellContent
             Title="SHOPPING CART"
             Icon="baskettab.png"
-            ContentTemplate="{DataTemplate local:ShoppingCart}" />
+            ContentTemplate="{DataTemplate local:CartPage}" />
         
         <ShellContent
             Title="PROFILE"

@@ -9,7 +9,7 @@
     </ContentPage.BindingContext>
 
     <StackLayout>
-        <ListView ItemsSource="{Binding CartItems}">
+        <ListView ItemsSource="{Binding CartItem}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -26,5 +26,4 @@
         </ListView>
         <Label Text="{Binding TotalPrice, StringFormat='Total Price: {0:C}'}"/>
     </StackLayout>
-
 </ContentPage>
