@@ -4,12 +4,12 @@ namespace ShoppingAppSQL.Models;
 
 public partial class FoodDetailsPage : ContentPage
 {
-    private readonly CartViewModel _viewmodel;
+    //private readonly CartViewModel _viewmodel;
     public FoodDetailsPage(FoodItemViewModel item)
 	{
 		InitializeComponent();
         BindingContext = item;
-        _viewmodel = (CartViewModel)BindingContext;
+        //_viewmodel = (CartViewModel)BindingContext;
     }
 
   /*  private void AddToCartBtn_Clicked(object sender, EventArgs e)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,8 @@ namespace ShoppingAppSQL.DataBaseItems
 {
      public class FoodItems
      {
+        [PrimaryKey,AutoIncrement]
+        public int FoodItemId { get; set; }
         public string FoodName { get; set; }
         public int FoodQuantity { get; set; }
         public string FoodImage { get; set; }
