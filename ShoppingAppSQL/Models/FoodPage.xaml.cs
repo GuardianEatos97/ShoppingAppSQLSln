@@ -52,7 +52,6 @@ public partial class FoodPage : ContentPage
     }
     public void LoadData() 
     {
-        FoodItems.Clear();
         FoodItems = new ObservableCollection<FoodItems>(_database.GetFoodItems());
     }
 }
