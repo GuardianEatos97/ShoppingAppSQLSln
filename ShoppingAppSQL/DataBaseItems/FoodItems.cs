@@ -11,7 +11,7 @@ namespace ShoppingAppSQL.DataBaseItems
         public string FoodName { get; set; }
         public string FoodQuantity { get; set; }
         public string FoodImage { get; set; }
-        public string FoodPrice { get; set; }
+        public decimal FoodPrice { get; set; }
         public string FoodDescription { get; set;}
      }
 }

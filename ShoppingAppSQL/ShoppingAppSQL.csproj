@@ -103,6 +103,9 @@
 	  <MauiXaml Update="Models\BodyCarePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Models\CartPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Models\CouponPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

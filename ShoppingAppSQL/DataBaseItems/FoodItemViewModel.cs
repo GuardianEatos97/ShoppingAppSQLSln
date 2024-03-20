@@ -29,7 +29,7 @@ namespace ShoppingAppSQL.DataBaseItems
                 {
                     FoodImage = "water.png",
                     FoodName = "Nestle Pure Life Water 500ml",
-                    FoodPrice = "R17",
+                    FoodPrice = 17,
                     FoodQuantity = "150",
                     FoodDescription = "Enjoy the unique flavour and taste of our natural spring water, bottled at the source.",
 
@@ -39,7 +39,7 @@ namespace ShoppingAppSQL.DataBaseItems
                 {
                     FoodImage = "coke.png",
                     FoodName = "Coca-Cola No Sugar 2L",
-                    FoodPrice = "R28",
+                    FoodPrice = 28,
                     FoodQuantity = "88",
                     FoodDescription = "Welcome to the generation of NO. A generation that believes in NO rules, NO heat, NO labels and NO limits. This is a generation that enjoys the right to be free and do whatever makes them happy, even when others don’t agree. Beyond just the flavour, Coke No Sugar is an attitude!"
 
@@ -49,7 +49,7 @@ namespace ShoppingAppSQL.DataBaseItems
                 {
                     FoodImage = "fruits.jpg",
                     FoodName = "Assorted Fruit Mix",
-                    FoodPrice = "R45/Kg",
+                    FoodPrice = 45,
                     FoodQuantity = "Store Dependant",
                     FoodDescription = "Our Delicious, Fresh and Healthy, Mixed Fruit, comes in a convenient bulk 1 KG unit. Fruits included is apple, apricots, peaches, pears, prunes and much much more."
 
@@ -59,7 +59,7 @@ namespace ShoppingAppSQL.DataBaseItems
                 {
                     FoodImage = "cupcakes.jpg",
                     FoodName = "Bar-One Cupcakes",
-                    FoodPrice = "R22 each",
+                    FoodPrice = 22,
                     FoodQuantity = "14",
                     FoodDescription = "Come and try our new addition to the in-store bakery. Baked fresh daily and served with love. Our bar-one is definitely number one."
 
@@ -68,7 +68,7 @@ namespace ShoppingAppSQL.DataBaseItems
                 {
                     FoodImage = "pies.jpg",
                     FoodName = "Baked Chicken Pies",
-                    FoodPrice = "R15 each",
+                    FoodPrice = 15,
                     FoodQuantity = "51",
                     FoodDescription = "Our pies are baked fresh daily. Enjoy the flakey dough and our succulent chicken filling."
 
