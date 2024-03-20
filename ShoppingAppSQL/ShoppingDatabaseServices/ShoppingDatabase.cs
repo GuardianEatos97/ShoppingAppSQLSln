@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using SQLiteNetExtensions.Extensions;
 using SQLitePCL;
 using ShoppingAppSQL.DataBaseItems;
-using Windows.Media.Protection.PlayReady;
+//using Windows.Media.Protection.PlayReady;
 
 namespace ShoppingAppSQL.ShoppingDatabaseServices
 {
@@ -120,7 +120,7 @@ namespace ShoppingAppSQL.ShoppingDatabaseServices
 
                     };
 
-                    _dbConnection.Insert(foodItems);
+                    _dbConnection.InsertAll((System.Collections.IEnumerable)foodItems);
                 }
 
             }
