@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ShoppingAppSQL.Models.ProfilePage"
+             BackgroundColor="Beige"
              Title="">
     <ScrollView>
     <VerticalStackLayout>
@@ -15,28 +16,122 @@
                 Text="Seraphim Superette Member Page"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
-                FontSize="Large"
+                FontSize="30"
                 TextDecorations="Underline"
                 FontAttributes="Bold"
             />
-            <Frame BorderColor="Transparent">
-                <StackLayout Orientation="Vertical">
+            <Frame BorderColor="Transparent" Padding="50" Margin="10" BackgroundColor="Beige">
+                <StackLayout Orientation="Horizontal">
                     <Image
                         Source="profiletab.png"
-                        VerticalOptions="Start"
-                        HeightRequest="100"/>
-                    <Entry Text="{Binding CurrentClient.ClientName}" FontSize="15" TextColor="Black"/>
+                        VerticalOptions="Center"
+                        HeightRequest="80"/>
+                    <Label Text="Welcome Back!" VerticalOptions="Center" HorizontalOptions="Center" FontSize="30"/>
                 </StackLayout>
             </Frame>
             
             <Button
             x:Name="ProfileBtn"
-            Text="Profile Settings"
-            HorizontalOptions="Center"
+            Text="Account Details"
+            HorizontalOptions="CenterAndExpand"
             Clicked="ProfileBtn_Clicked"
+                HeightRequest="50"
+                WidthRequest="200"
             BorderColor="Black"
             BorderWidth="5"
-            BackgroundColor="LightSteelBlue"/>
-    </VerticalStackLayout>
+                TextColor="Black"
+            BackgroundColor="LightSteelBlue"
+                Margin="10"/>
+            <Button
+Text="Communication"
+HorizontalOptions="CenterAndExpand"
+    HeightRequest="50"
+    WidthRequest="200"
+BorderColor="Black"
+BorderWidth="5"
+    TextColor="Black"
+BackgroundColor="LightSteelBlue"
+                Margin="10"/>
+            <Button
+Text="Link Your Club Card"
+HorizontalOptions="CenterAndExpand"
+    HeightRequest="50"
+    WidthRequest="200"
+BorderColor="Black"
+BorderWidth="5"
+    TextColor="Black"
+BackgroundColor="LightSteelBlue"
+                Margin="10"/>
+            <Button
+Text="Sign Up For A New Card"
+HorizontalOptions="CenterAndExpand"
+    HeightRequest="50"
+    WidthRequest="200"
+BorderColor="Black"
+BorderWidth="5"
+    TextColor="Black"
+BackgroundColor="LightSteelBlue"
+                Margin="10"/>
+            <Button
+Text="Payment Methods"
+HorizontalOptions="CenterAndExpand"
+    HeightRequest="50"
+    WidthRequest="200"
+BorderColor="Black"
+BorderWidth="5"
+    TextColor="Black"
+BackgroundColor="LightSteelBlue"
+                Margin="10"/>
+            <Button
+Text="e-Wallet Balance"
+HorizontalOptions="CenterAndExpand"
+    HeightRequest="50"
+    WidthRequest="200"
+BorderColor="Black"
+BorderWidth="5"
+    TextColor="Black"
+BackgroundColor="LightSteelBlue"
+                Margin="10"/>
+            <Button
+Text="Online Purchases"
+HorizontalOptions="CenterAndExpand"
+    HeightRequest="50"
+    WidthRequest="200"
+BorderColor="Black"
+BorderWidth="5"
+    TextColor="Black"
+BackgroundColor="LightSteelBlue"
+                Margin="10"/>
+            <Button
+Text="FAQs"
+HorizontalOptions="CenterAndExpand"
+    HeightRequest="50"
+    WidthRequest="200"
+BorderColor="Black"
+BorderWidth="5"
+    TextColor="Black"
+BackgroundColor="LightSteelBlue"
+                Margin="10"/>
+            <Button
+Text="About Us"
+HorizontalOptions="CenterAndExpand"
+    HeightRequest="50"
+    WidthRequest="200"
+BorderColor="Black"
+BorderWidth="5"
+    TextColor="Black"
+BackgroundColor="LightSteelBlue"
+                Margin="10"/>
+            <Button
+Text="Log Out"
+HorizontalOptions="CenterAndExpand"
+    HeightRequest="50"
+    WidthRequest="200"
+BorderColor="Black"
+BorderWidth="5"
+    TextColor="Black"
+BackgroundColor="LightSteelBlue"
+                Margin="10"/>
+        </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
