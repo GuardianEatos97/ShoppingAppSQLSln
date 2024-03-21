@@ -15,20 +15,7 @@
                 Title="FOOD"
                 ContentTemplate="{DataTemplate local:FoodPage}" />
 
-            <ShellContent 
-                Title="BODY CARE"
-                ContentTemplate="{DataTemplate local:BodyCare}" />
-            
-            <ShellContent 
-                Title="APPLIANCES"
-                ContentTemplate="{DataTemplate local:Appliances}"/>
-
         </Tab>
-        <ShellContent
-            Title="COUPONS"
-            Icon="coupontab.png"
-            ContentTemplate="{DataTemplate local:CouponPage}" />
-
         <ShellContent
             Title="SEARCH"
             Icon="searchtab.png"
