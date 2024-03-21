@@ -67,10 +67,36 @@ public partial class FoodPage : ContentPage
         FoodItems = new ObservableCollection<FoodItems>(_database.GetFoodItems());
     }
 
-    private void ViewBtn_Clicked(object sender, EventArgs e)
+    private List<CartItem> Basket = new List<CartItem>();
+    private async void ViewBtn_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new FoodDetailsPage());
-        LoadItem();
+        Button button = sender as Button;
+        var item = button.CommandParameter as FoodItems;
+        //Navigation.PushAsync(new FoodDetailsPage());
+        //LoadItem();
+        if (item != null)//(sender is Button button && button.BindingContext is FoodItems item)
+        {
+            CartItem AlreadyAdded = Basket.FirstOrDefault(i => i.FoodItemId == item.FoodItemId);
+            if(AlreadyAdded != null) 
+            {
+                AlreadyAdded.ItemQuantity++;
+                AlreadyAdded.CartPrice += item.FoodPrice;
+            }
+            else 
+            {
+                CartItem cartItem = new CartItem()
+                {
+                    FoodItemId = item.FoodItemId,
+                    FoodName = item.FoodName,
+                    ItemQuantity = 1,
+                    CartPrice = item.FoodPrice,
+
+                };
+                Basket.Add(cartItem);
+                _database.AddToDataBase(cartItem);
+                await DisplayAlert("Notice", "Item Added To Cart", "Okay");
+            }
+        }
     }
 
     private void LoadItem()

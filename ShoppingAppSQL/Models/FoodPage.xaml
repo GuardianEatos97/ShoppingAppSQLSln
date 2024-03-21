@@ -47,7 +47,7 @@
                                     <Button  FontSize="13"
                                              Margin="0,0,10,0"
                                              BackgroundColor="#2C363C"
-                                             Text="View"
+                                             Text="Add"
                                              Clicked="ViewBtn_Clicked"
                                              Command="{Binding Source={x:Reference listView},Path=BindingContext.ProductClick}"
                                              CommandParameter="{Binding}"

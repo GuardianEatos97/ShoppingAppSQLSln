@@ -4,20 +4,16 @@
              x:Class="ShoppingAppSQL.Models.CartPage"
              xmlns:DataBaseItems="clr-namespace:ShoppingAppSQL.DataBaseItems">
 
-    <ContentPage.BindingContext>
-        <DataBaseItems:CartViewModel/>
-    </ContentPage.BindingContext>
-
     <StackLayout>
-        <ListView ItemsSource="{Binding CartItem}">
+        <ListView x:Name="CartListView" ItemsSource="{Binding BasketItem}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout Orientation="Horizontal">
-                            <Label Text="{Binding Product.FoodName}" VerticalOptions="Center"/>
+                            <Label Text="{Binding FoodName}" VerticalOptions="Center"/>
                             <Label Text="{Binding Product.FoodPrice, StringFormat='Price: {0:C}'}" VerticalOptions="Center"/>
                             <Label Text="Quantity: " VerticalOptions="Center"/>
-                            <Entry Text="{Binding Quantity}" Keyboard="Numeric"/>
+                            <Entry Text="{Binding ItemQuantity}" Keyboard="Numeric"/>
                             <Button Text="Remove" Clicked="OnRemoveClicked"/>
                         </StackLayout>
                     </ViewCell>

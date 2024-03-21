@@ -16,26 +16,26 @@ namespace ShoppingAppSQL.DataBaseItems
             set { _cartItems = value; OnPropertyChanged(); }
         }
 
-        public decimal TotalPrice => CartItems.Sum(item => item.Product.FoodPrice * item.Quantity);
+        //public decimal TotalPrice => CartItems.Sum(item => item.FoodName.FoodPrice * item.FoodQantity);
 
-        public void AddItem(FoodItems product)
-        {
-            var existingItem = CartItems.FirstOrDefault(item => item.Product.FoodName == product.FoodName);
-            if (existingItem != null)
-            {
-                existingItem.Quantity++;
-            }
-            else
-            {
-                CartItems.Add(new CartItem { Product = product, Quantity = 1 });
-            }
-            OnPropertyChanged(nameof(TotalPrice));
-        }
+        //public void AddItem(FoodItems product)
+        //{
+        //    var existingItem = CartItems.FirstOrDefault(item => item.Product.FoodName == product.FoodName);
+        //    if (existingItem != null)
+        //    {
+        //        existingItem.Quantity++;
+        //    }
+        //    else
+        //    {
+        //        CartItems.Add(new CartItem { FoodName = product, Quantity = 1 });
+        //    }
+        //    OnPropertyChanged(nameof(TotalPrice));
+        //}
 
-        public void RemoveItem(CartItem item)
-        {
-            CartItems.Remove(item);
-            OnPropertyChanged(nameof(TotalPrice));
-        }
+        //public void RemoveItem(CartItem item)
+        //{
+        //    CartItems.Remove(item);
+        //    OnPropertyChanged(nameof(TotalPrice));
+        //}
     }
 }

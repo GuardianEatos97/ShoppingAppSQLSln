@@ -163,6 +163,10 @@ namespace ShoppingAppSQL.ShoppingDatabaseServices
         {
             return _dbConnection.Table<FoodItems>().ToList();
         }
+        public List<CartItem> GetCartItems() 
+        {
+            return _dbConnection.Table<CartItem>().ToList();
+        }
 
         public FoodItems GetItemById(int id)
         {
@@ -173,7 +177,14 @@ namespace ShoppingAppSQL.ShoppingDatabaseServices
 
             return foodItems;
         }
-
+        public void AddToDataBase(CartItem cartItem) //Add Item from from db to cart
+        {
+            _dbConnection.Insert(cartItem);
+        }
+        public void DeleteFromDataBase(CartItem cartItem) //Remove Item from from cart to db
+        {
+            _dbConnection.Delete(cartItem);
+        }
     }
 } 
 
