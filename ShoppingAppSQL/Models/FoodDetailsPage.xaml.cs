@@ -1,14 +1,22 @@
 using ShoppingAppSQL.DataBaseItems;
+using ShoppingAppSQL.ShoppingDatabaseServices;
 
 namespace ShoppingAppSQL.Models;
 
 public partial class FoodDetailsPage : ContentPage
 {
+    private ShoppingDatabase _database;
+
+    public FoodDetailsPage()
+    {
+    }
+
     //private readonly CartViewModel _viewmodel;
     public FoodDetailsPage(FoodItemViewModel item)
 	{
 		InitializeComponent();
-        BindingContext = item;
+        this.BindingContext = item;
+        _database = new ShoppingDatabase();
         //_viewmodel = (CartViewModel)BindingContext;
     }
 

@@ -18,7 +18,19 @@ public partial class FoodPage : ContentPage
          OnPropertyChanged();
        }
     }
+    private FoodItems _fooditems;
 
+    public FoodItems Fooditems
+    {
+        get { return _fooditems; }
+        set
+        {
+            _fooditems = value;
+
+            OnPropertyChanged();
+
+        }
+    }
     private int _foodquantity;
     public int FoodQuantity 
     {
@@ -53,5 +65,19 @@ public partial class FoodPage : ContentPage
     public void LoadData() 
     {
         FoodItems = new ObservableCollection<FoodItems>(_database.GetFoodItems());
+    }
+
+    private void ViewBtn_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new FoodDetailsPage());
+        LoadItem();
+    }
+
+    private void LoadItem()
+    {
+        FoodItems foodItems = _database.GetItemById(1);
+
+        Fooditems = foodItems;
+
     }
 }

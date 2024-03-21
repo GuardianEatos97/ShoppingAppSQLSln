@@ -25,7 +25,7 @@ namespace ShoppingAppSQL.DataBaseItems
         {
             FoodItems = new ObservableCollection<FoodItems>
             {
-                new FoodItems
+                new FoodItems()
                 {
                     FoodImage = "water.png",
                     FoodName = "Nestle Pure Life Water 500ml",
@@ -35,7 +35,7 @@ namespace ShoppingAppSQL.DataBaseItems
 
                 },
 
-                new FoodItems
+                new FoodItems()
                 {
                     FoodImage = "coke.png",
                     FoodName = "Coca-Cola No Sugar 2L",
@@ -45,7 +45,7 @@ namespace ShoppingAppSQL.DataBaseItems
 
                 },
 
-                new FoodItems
+                new FoodItems()
                 {
                     FoodImage = "fruits.jpg",
                     FoodName = "Assorted Fruit Mix",
@@ -55,7 +55,7 @@ namespace ShoppingAppSQL.DataBaseItems
 
                 },
 
-                new FoodItems
+                new FoodItems()
                 {
                     FoodImage = "cupcakes.jpg",
                     FoodName = "Bar-One Cupcakes",
@@ -64,7 +64,7 @@ namespace ShoppingAppSQL.DataBaseItems
                     FoodDescription = "Come and try our new addition to the in-store bakery. Baked fresh daily and served with love. Our bar-one is definitely number one."
 
                 },
-                new FoodItems
+                new FoodItems()
                 {
                     FoodImage = "pies.jpg",
                     FoodName = "Baked Chicken Pies",
@@ -87,7 +87,6 @@ namespace ShoppingAppSQL.DataBaseItems
 
         async void executeProductClickCommand(FoodItems item)
         {
-            Console.WriteLine("I'm clicking the product!");
             this.SelectedProduct = item;
             await navigation.PushModalAsync(new FoodDetailsPage(this));
         }

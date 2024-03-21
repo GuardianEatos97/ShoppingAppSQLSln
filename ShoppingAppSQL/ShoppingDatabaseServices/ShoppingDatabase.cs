@@ -73,7 +73,7 @@ namespace ShoppingAppSQL.ShoppingDatabaseServices
                     {
                         new FoodItems()
                         {
-                             FoodImage = "water.png",
+                        FoodImage = "water.png",
                         FoodName = "Nestle Pure Life Water 500ml",
                         FoodPrice = 17,
                         FoodQuantity = 150,
@@ -162,6 +162,16 @@ namespace ShoppingAppSQL.ShoppingDatabaseServices
         public List<FoodItems> GetFoodItems() 
         {
             return _dbConnection.Table<FoodItems>().ToList();
+        }
+
+        public FoodItems GetItemById(int id)
+        {
+            FoodItems foodItems = _dbConnection.Table<FoodItems>().Where(x => x.FoodItemId == id).FirstOrDefault();
+
+            if (foodItems != null)
+                _dbConnection.GetChildren(foodItems, true);
+
+            return foodItems;
         }
 
     }

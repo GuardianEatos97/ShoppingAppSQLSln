@@ -28,7 +28,7 @@
 
             <BoxView Grid.Row="2" CornerRadius="0,0,50,50" Margin="0,-1,0,0" Color="White" HeightRequest="150" />
 
-            <Button Text="Add To Cart" Grid.Row="2" CornerRadius="20" Command="{Binding Source={x:Reference FoodDetailPage},Path=BindingContext.CartItem}" BackgroundColor="#2C363C" Margin="60,40" FontAttributes="Bold" HeightRequest="55" TextColor="White" VerticalOptions="CenterAndExpand"/>
+            <Button Text="Add To Cart" Grid.Row="2" CornerRadius="20" Command="{Binding Source={x:Reference FoodDetailPage},Path=BindingContext.CartPage}" BackgroundColor="#2C363C" Margin="60,40" FontAttributes="Bold" HeightRequest="55" TextColor="White" VerticalOptions="CenterAndExpand"/>
 
         </Grid>
     </ContentPage.Content>
