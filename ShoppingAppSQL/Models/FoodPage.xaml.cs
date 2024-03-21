@@ -94,7 +94,6 @@ public partial class FoodPage : ContentPage
                 };
                 Basket.Add(cartItem);
                 _database.AddToDataBase(cartItem);
-                await DisplayAlert("Notice", "Item Added To Cart", "Okay");
             }
         }
     }
