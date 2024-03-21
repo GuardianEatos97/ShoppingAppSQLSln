@@ -86,10 +86,11 @@ public partial class FoodPage : ContentPage
             {
                 CartItem cartItem = new CartItem()
                 {
-                    FoodItemId = item.FoodItemId,
+                    CartItemId = item.FoodItemId,
                     FoodName = item.FoodName,
                     ItemQuantity = 1,
                     CartPrice = item.FoodPrice,
+                    ItemImage = item.FoodImage,
 
                 };
                 Basket.Add(cartItem);

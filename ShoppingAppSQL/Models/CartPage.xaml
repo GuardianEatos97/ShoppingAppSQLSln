@@ -10,8 +10,9 @@
                 <DataTemplate x:DataType="DataBaseItems:CartItem">
                     <ViewCell>
                         <StackLayout Orientation="Horizontal">
+                            <Image Source="{Binding ItemImage}" HeightRequest="200" WidthRequest="200"/>
                             <Label Text="{Binding FoodName}" VerticalOptions="Center"/>
-                            <Label Text="{Binding FoodPrice, StringFormat='Price: {0:C}'}" VerticalOptions="Center"/>
+                            <Label Text="{Binding CartPrice, StringFormat='Price: {0:C}'}" VerticalOptions="Center"/>
                             <Label Text="Quantity: " VerticalOptions="Center"/>
                             <Entry Text="{Binding ItemQuantity}" Keyboard="Numeric"/>
                             <Button Text="Remove" Clicked="OnRemoveClicked"/>

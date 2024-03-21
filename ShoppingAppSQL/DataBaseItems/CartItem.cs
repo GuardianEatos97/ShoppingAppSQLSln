@@ -14,8 +14,8 @@ namespace ShoppingAppSQL.DataBaseItems
         public int CartItemId { get; set; }
         public int ItemQuantity { get; set; }
         public decimal CartPrice { get; set; }
-        public string FoodName { get; set;}
-        public int FoodQuantity { get; set; }
+        public string FoodName { get; set; }
+        public string ItemImage { get; set; }
         
 
         [ForeignKey(typeof(FoodItems))]
