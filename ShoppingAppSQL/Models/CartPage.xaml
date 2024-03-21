@@ -7,13 +7,13 @@
     <StackLayout>
         <ListView x:Name="CartListView" ItemsSource="{Binding BasketItem}">
             <ListView.ItemTemplate>
-                <DataTemplate>
+                <DataTemplate x:DataType="DataBaseItems:CartItem">
                     <ViewCell>
                         <StackLayout Orientation="Horizontal">
-                            <Label Text="{Binding BasketItem.FoodName}" VerticalOptions="Center"/>
-                            <Label Text="{Binding BasketItem.FoodPrice, StringFormat='Price: {0:C}'}" VerticalOptions="Center"/>
+                            <Label Text="{Binding FoodName}" VerticalOptions="Center"/>
+                            <Label Text="{Binding FoodPrice, StringFormat='Price: {0:C}'}" VerticalOptions="Center"/>
                             <Label Text="Quantity: " VerticalOptions="Center"/>
-                            <Entry Text="{Binding BasketItem.ItemQuantity}" Keyboard="Numeric"/>
+                            <Entry Text="{Binding ItemQuantity}" Keyboard="Numeric"/>
                             <Button Text="Remove" Clicked="OnRemoveClicked"/>
                         </StackLayout>
                     </ViewCell>
