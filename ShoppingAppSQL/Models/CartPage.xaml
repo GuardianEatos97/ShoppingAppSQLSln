@@ -5,7 +5,7 @@
              xmlns:DataBaseItems="clr-namespace:ShoppingAppSQL.DataBaseItems">
 
     <StackLayout>
-        <ListView x:Name="CartListView" ItemsSource="{Binding BasketItem}">
+        <ListView x:Name="CartListView" ItemsSource="{Binding BasketItems}">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="DataBaseItems:CartItem">
                     <ViewCell>
